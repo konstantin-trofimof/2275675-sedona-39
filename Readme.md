@@ -2,6 +2,7 @@
 
 * Студент: [Константин Трофимов](https://up.htmlacademy.ru/htmlcss/39/user/2275675).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект Седона] (https://konstantin-trofimof.github.io/2275675-sedona-39/).
 
 ---
 
