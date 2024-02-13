@@ -6,37 +6,39 @@
   </head>
 
   <body>
+
     <header class="page-header">
       <a class="page-header-logo-link" href="index.html">
         <img class="page-header-logo-img" src="#" alt="Логотип города Седона.">
       </a>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О седоне</a>
           </li>
-          <li class="navigation-item current">
-            <a class="navigation-link" href="#">Гостиницы</a>
+          <li class="nav-item current">
+            <a class="nav-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-user-link-search" href="#">
+        <ul class="nav-user-list">
+          <li class="nav-user-item">
+            <a class="nav-user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-user-link-favorites" href="#">
-              <span class="visually-hidden">Избранное</span>
+          <li class="nav-user-item">
+            <a class="nav-user-link-favorites" href="#">
+              <span class="visually-hidden">Количество элементов в избранном: </span>
+              <span class="favorites-number">12</span>
             </a>
           </li>
-          <li class="navigation-item navigation-user-link-want">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link-want" href="catalog.html">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -114,8 +116,7 @@
       </div>
 
       <section class="found-hotels">
-        <h2 class="visually-hidden">Все найденные гостиницы.</h2>
-        <span class="found-hotels-total">Найдено гостиниц: 38</span>
+        <h2 class="found-hotels-title">Найдено гостиниц: <span>38</span></h2>
 
         <select class="select-control" aria-label="Сортировка по цене и популярности.">
           <option value="cheap">Сначала дешевые</option>
@@ -242,18 +243,16 @@
         </ul>
       </section>
 
-      <section class="mailing-list-catalog">
-        <h2 class="visually-hidden">Подписка на рассылку.</h2>
-        <p class="mailing-list-lead">Подпишитесь на рассылку</p>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-            <span class="visually-hidden">Введите ваш e-mail.</span>
-            <input class="mailing-list-field" type="email" name="email-adress" required placeholder="Ваш e-mail">
-          </label>
-          <button class="mailing-list-subscribe-button" type="submit">Подписаться</button>
+      <section class="subscribe subscribe-catalog">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="subscribe-id">Введите ваш e-mail.</label>
+          <input class="subscribe-field" type="email" name="email-adress" id="subscribe-id" required placeholder="Ваш e-mail">
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
+
     </main>
 
     <footer class="page-footer">

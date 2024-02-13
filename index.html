@@ -7,53 +7,50 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header-logo-link">
+      <a class="page-header-logo-link" href="index.html" aria-current="page">
         <img class="page-header-logo-img" src="#" alt="Логотип города Седона.">
       </a>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item current">
-            <a class="navigation-link" href="#">Главная</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item current">
+            <a class="nav-link" href="index.html" aria-current="page">Главная</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-user-link-search" href="#">
+        <ul class="nav-user-list">
+          <li class="nav-user-item">
+            <a class="nav-user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-user-link-favorites" href="#">
-              <span class="visually-hidden">Избранное</span>
+          <li class="nav-user-item">
+            <a class="nav-user-link-favorites" href="#">
+              <span class="visually-hidden">Количество элементов в избранном: </span>
+              <span class="favorites-number">12</span>
             </a>
           </li>
-          <li class="navigation-item navigation-user-link-want">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link-want" href="catalog.html">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">Город Седона в штате Аризона</h1>
 
-      <section class="hero">
-        <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
-      </section>
+      <img src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+
+      <h1 class="main-title">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advantages-lead">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
-        <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон</p>
+        <h2 class="advantages-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон</h2>
 
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-wide">
@@ -65,7 +62,7 @@
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item advantages-item-more-opacity">
+          <li class="advantages-item advantages-item-dark">
             <h3 class="advantages-title">Красивая дорога</h3>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </li>
@@ -82,74 +79,75 @@
       </section>
 
       <section class="facilities">
-        <h2 class="visually-hidden">Удобства</h2>
-        <p class="facilities-lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <h2 class="facilities-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="facilities-text">Опытный персонал и качественное обслуживание!</p>
 
         <ul class="facilities-list">
-          <li class="facilities-item facilities-item-opacity">
+          <li class="facilities-item facilities-house-pic">
             <h3 class="facilities-title">Жилье</h3>
             <p class="facilities-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="facilities-item">
+          <li class="facilities-item facilities-item-light facilities-burger-pic">
             <h3 class="facilities-title">Еда</h3>
             <p class="facilities-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="facilities-item facilities-item-opacity">
+          <li class="facilities-item facilities-gift-pic">
             <h3 class="facilities-title">Сувениры</h3>
             <p class="facilities-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
 
-      <section class=search-hotels>
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне.</h2>
-        <p class="search-hotels-lead">Заинтересовались?</p>
+      <section class="search-hotels">
+        <h2 class="search-hotels-title">Заинтересовались?</h2>
         <p class="search-hotels-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-hotels-by-date-button" href="catalog.html">
           <span>Поиск гостиницы в Седоне</span>
         </a>
       </section>
 
-      <section class="mailing-list">
-        <h2 class="visually-hidden">Подписка на рассылку.</h2>
-        <p class="mailing-list-lead">Подпишитесь на рассылку</p>
-        <p class="mailing-list-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-            <span class="visually-hidden">Введите ваш e-mail.</span>
-            <input class="mailing-list-field" type="email" name="email-adress" required placeholder="Ваш e-mail">
-          </label>
-          <button class="mailing-list-subscribe-button" type="submit">Подписаться</button>
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="subscribe-id">Введите ваш e-mail.</label>
+          <input class="subscribe-field" type="email" name="email-adress" id="subscribe-id" required placeholder="Ваш e-mail">
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Социальные сети, телефон компании и ссылка на разработчика.</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
+      <section class="socials">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="socials-list">
+          <li class="socials-item">
             <a class="button-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте.</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="socials-item">
             <a class="button-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram.</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="socials-item">
             <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube.</span>
             </a>
           </li>
         </ul>
-
-        <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты компании и ссылка на разработчика.</h2>
+        <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="developers-link" href="https://htmlacademy.ru/">
+          <img class="developers-logo" src="#" alt="Логотип HTML Academy.">
+        </a>
+      </section>
+
     </footer>
 
   </body>
